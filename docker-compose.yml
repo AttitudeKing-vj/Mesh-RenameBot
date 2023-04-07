@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      API_HASH: $API_HASH
+      API_ID: $API_ID
+      AUTH_USERS: $AUTH_USERS
+      BOT_TOKEN: $BOT_TOKEN
+      COMPLETED_STR: $COMPLETED_STR
+      DB_URI: $DB_URI
+      IS_PRIVATE: $IS_PRIVATE
+      MAX_QUEUE_SIZE: $MAX_QUEUE_SIZE
+      OWNER_ID: $OWNER_ID
+      REMAINING_STR: $REMAINING_STR
+      SLEEP_SECS: $SLEEP_SECS
